@@ -1,0 +1,337 @@
+// Core component: Project
+// Sub components: Logo, Devices, Highlights, Tags, Brands
+
+// @import 'partials/custom'
+
+.panel,
+.panel-inner
+  width: 100%
+  border-radius: $panel-border-radius-mobile
+  position: relative
+  // height: 56px
+  @extend .clearfix
+
+.panel
+  float: left
+  display: block
+  cursor: pointer
+  transition: all .5s linear
+  margin-bottom: 10px
+  background-color: #333
+  text-shadow: 1px 1px 10px rgba(0,0,0,.05)
+  @extend .proxima-nova-soft
+
+  &:active,
+  &:focus,
+  &:hover
+    outline: 0 none
+  &:hover
+    -webkit-box-shadow: 5px 0px 25px rgba(0,0,0,.15)
+    text-shadow: 1px 1px 10px rgba(0,0,0,.15)
+
+  h1
+    font-weight: 700
+    margin: 0
+    height: 26px
+    padding: 0
+    font-size: 1.2em
+    line-height: 26px
+    float: left
+    &:hover:after
+      content: "🔗"
+      display: inline-block
+      padding-left: 10px
+      font-size: 20px
+
+    &:hover
+      opacity: .9
+    a
+      color: white
+
+  .panel-inner
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.08) 100%)
+    text-align: center
+    color: white
+    padding: 15px
+
+    &:hover
+      background-image: none
+
+  .devices
+    position: relative
+    float: right
+    margin: 0
+    padding: 0
+    display: none
+
+    li
+      margin-left: 8px
+      text-indent: -9999px
+      background-repeat: no-repeat
+
+      svg
+        height: 26px
+        width: auto
+        display: block
+        &:hover
+          opacity: .9
+
+  .highlights
+    width: 100%
+    text-align: center
+    list-style: none
+    font-size: 28px
+    line-height: 30px
+    letter-spacing: -1px
+    text-align: center
+    padding: 20% 0
+    position: relative
+    display: none
+    flex-direction: column
+    justify-content: center
+    font-weight: 700
+    @extend .proxima-nova-soft
+
+    li
+      &:hover
+        opacity: .9
+
+  .tags
+    position: absolute
+    left: 15px
+    bottom: 15px
+    -webkit-animation-duration: 0.25s
+    animation-duration: 0.25s
+    display: none
+    font-size: 1em
+    overflow-x: scroll
+    float: left
+    font-weight: 700
+    @extend .clearfix
+
+    li
+      list-style: none
+      float: left
+      line-height: 18px
+
+  .brands
+    height: 26px
+    display: flex
+    justify-content: flex-end
+    position: relative
+
+    img
+      width: auto
+      height: auto
+      max-width: 100px
+      max-height: 32px
+      &:hover
+        opacity: .9
+      // float: left
+      // width: 100%
+
+.portfolio
+  &.project,
+  &.grid
+    .panel,
+    .panel-inner
+      width: 100%
+      height: auto
+      .highlights,
+      .devices
+        display: flex
+
+.panel-stat
+  cursor: default
+  width: calc(100% / 2 - 5px)
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 160px
+  @media (min-width: 1024px)
+    height: auto
+
+  .panel-inner
+    height: 160px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: transparent
+    transition: background-color .5s ease
+    &:hover
+      background-color: rgba(0,0,0,.25)
+
+    @media (min-width: 1024px)
+      height: auto
+  &:nth-child(odd)
+    margin-right: 10px
+  &:hover
+    z-index: 9999
+    position: relative
+
+    h2
+      opacity: 1
+      text-shadow: 1px 1px 10px rgba(0,0,0,.15)
+  h2
+    line-height: 36px
+    font-size: 48px
+    opacity: .9
+    text-shadow: 1px 1px 10px rgba(0,0,0,.05)
+    @media (min-width: 1024px)
+      font-size: 58px
+      margin: 50px 0
+    @media (min-width: 1200px)
+      font-size: 62px
+      margin: 70px 0
+    @media (min-width: 1600px)
+      font-size: 66px
+    span
+      line-height: 20px
+      font-size: 18px
+      display: block
+      margin-top: 15px
+      // color: #acacac
+      // opacity: .8
+      @media (min-width: 1200px)
+        font-size: 22px
+        line-height: 24px
+        margin-top: 30px
+  &.brands
+    background-image: linear-gradient(135deg, #FAD7A1 10%, #E96D71 100%)
+  &.projects-and-products
+    background-image: linear-gradient(135deg, #52E5E7 10%, #130CB7 100%)
+  &.awards-and-nominations
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%)
+  &.clients
+    background-image: linear-gradient(135deg, #FF6FD8 10%, #3813C2 100%)
+  &.highlights
+    background-image: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%)
+  &.machines
+    background-image: linear-gradient(135deg, #97ABFF 10%, #123597 100%)
+  &.tools-and-skills
+    background-image: linear-gradient(135deg, #FFF720 10%, #3CD500 100%)
+  &.years-of-experience
+    background-image: linear-gradient(135deg, #F6CEEC 10%, #D939CD 100%)
+  &.tags
+    background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%)
+  &.publications
+    background-image: linear-gradient(135deg, #3B2667 10%, #BC78EC 100%)
+
+@media (min-width: 375px)
+  .panel
+    .brands
+      img
+        max-width: 160px
+
+@media (min-width: 768px)
+  body
+    font-size: 16px
+  .portfolio
+    &.grid
+      .panel
+        width: calc(50% - 5px)
+        &:nth-child(odd)
+          margin-right: 10px
+    .brands
+      img
+        max-width: initial
+  .project
+    .panel
+      width: 100%
+      font-size: 16px
+      .highlights
+        font-size: 40px
+        line-height: 42px
+
+@media (min-width: 1200px)
+  .panel
+    width: calc(50% - 5px)
+    &:nth-child(odd)
+      margin-right: 10px
+    .devices
+      display: flex
+      li
+        margin-left: 10px
+      svg
+        height: 30px
+        width: auto
+    .highlights
+      padding: 0
+      display: flex
+      height: 420px
+      font-size: 46px
+      line-height: 48px
+
+  .project
+    .panel
+      .highlights
+        font-size: 58px
+        line-height: 60px
+  .portfolio
+    &.grid,
+    &.project
+      .panel
+        width: 100%
+        margin-bottom: 20px
+        h1
+          font-size: 1.75em
+        .highlights
+          height: calc(100vh - 125px)
+          font-size: 58px
+          line-height: 60px
+        .tags
+          display: flex
+
+@media (min-width: 1600px)
+  .portfolio
+    &.grid
+      .panel,
+      .panel-inner
+        width: 100%
+        height: auto
+        .highlights,
+        .tags,
+        .devices
+          display: flex
+        .highlights
+          font-size: 58px
+          line-height: 56px
+  .panel
+    // width: 100%
+    // min-width: 100%
+    // max-width: 100%
+    h1
+      // font-size: 2em
+    .tags
+      display: none
+      // font-size: 1em
+      li
+        line-height: 1.3em
+        display: inline
+        margin-right: 10px
+    .brands
+      // float: right
+      img
+        width: auto
+      // height: 40px
+  .panel .highlights
+    // font-size: 58px
+    // line-height: 56px
+  .panel .tags
+    // display: block
+  .panel,
+  .panel-inner
+    border-radius: $panel-border-radius-desktop
+    // height: 56px
+    .highlights,
+    .tags,
+    .devices
+      // display: none
+  .project
+    .panel,
+    .panel-inner
+      height: initial
+      .highlights,
+      .tags,
+      .devices
+        display: flex

@@ -1,0 +1,89 @@
+.resume
+  width: 100%
+  float: left
+  color: #222
+  background-color: white
+
+  .header
+    .menu
+      li
+        a.active
+          color: #222
+          &:hover
+            color: #666
+  h1 a,p
+    color: #222
+
+  .menu
+    li
+      a
+        &:hover,
+        .active
+          color: #666
+
+  .content
+    font-family: 'hk-grotesk-regular'
+    font-weight: 100
+    font-size: 16px
+    -webkit-font-smoothing: initial
+    -moz-osx-font-smoothing: initial
+
+    h2
+      font-family: 'gt-pressura-mono-bold'
+      text-transform: uppercase
+      margin-top: 35px
+      float: left
+      width: 100%
+
+    p,a
+      color: #222
+
+    strong
+      font-family: 'hk-grotesk-medium'
+
+    table tr td:first-child
+      display: none
+
+    .column
+      width: 100%
+      float: left
+      min-height: 1px
+      position: relative
+      // padding-right: 15px
+      // padding-left: 15px
+
+      p,ul
+        padding-bottom: 10px
+        line-height: 1.45em
+
+    .experience
+      float: left
+      margin-bottom: 10px
+
+      ul
+        margin-left: 40px
+
+        li
+          list-style: disc
+          line-height: 24px
+
+    table
+      @media (min-width: 1024px)
+        width: 500px
+
+    @media (min-width: 768px)
+      .column
+        width: 50%
+        &:first-child
+          padding-right: 25px
+        &:last-child
+          padding-left: 25px
+      table tr td:first-child
+        display: block
+    @media (min-width: 1200px)
+      .column
+        padding-right: 50px
+        padding-left: 50px
+
+  .footer
+    margin-top: 30px

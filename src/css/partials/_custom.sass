@@ -1,0 +1,121 @@
+// TODO: Make the following dynamic with JS
+
+.panel
+  &.siriusxm-podcasts
+    background-color: #0000EB
+  &.siriusxm-publish
+    background-color: #291D7C
+  &.siriusxm-clips
+    background-color: #03adf2
+  &.spoke
+    background-color: #00D9D6
+  &.big-mirror-labs
+    background-color: #000
+    h1
+      color: white
+    &::before
+      transition: all .5s ease-in
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0.5
+      background-image: url('../img/bg-bml.jpg')
+      background-repeat: no-repeat
+      -ms-background-size: cover
+      -o-background-size: cover
+      -moz-background-size: cover
+      -webkit-background-size: cover
+      background-size: cover
+    &:hover
+      &::before
+        opacity: .9
+  &.ralph-lauren
+    background-color: #041e3a
+  &.spoke
+    background-color: #00D9D6
+  &.karisma-hotels
+    background-color: white
+    color: #333
+    h1,
+    .highlights,
+    .tags
+      color: #333
+    // background-color: #f7f3ea
+    // background-color: #5e3528
+    // color: #5e3528
+  &.go-see-south-africa
+    // background-color: #193f69
+    background-color: #ebebeb
+    color: #333
+    h1,
+    .highlights,
+    .tags
+      color: #333
+  &.nyc-secure
+    background-color: #000
+    .panel-inner
+      background-image: none
+      .brands
+        img
+          max-width: 78px
+  &.alamo-china
+    &::before
+      transition: all .5s ease-in
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0.6
+      background-color: #295EAC
+      background-image: url('../img/bg-alamo.jpg')
+      background-repeat: no-repeat
+      -ms-background-size: cover
+      -o-background-size: cover
+      -moz-background-size: cover
+      -webkit-background-size: cover
+      background-size: 300%
+      background-position: -400px center
+  &.alamo-china,
+  &.alamo-europe
+    background-color: #295EAC
+  &.ncl-escape
+    background-color: #217AAA
+  &.enterprise-europe
+    background-color: #169A5A
+  &.toronto-escapes
+    background-color: #662857
+  &.resorts-world-bimini
+    background-color: #FAFAFA
+    color: #333333
+    .panel-inner
+      h1,
+      .highlights,
+      .tags
+        color: #333333
+  &.the-miami-institute
+    background-color: #000000
+  &.one-sale
+    background-color: #2EC7C3
+  &.aeroméxico
+    background-color: #0b2343
+  &.one-sale .brands,
+  &.one-sale .brands img,
+  &.go-see-south-africa .brands,
+  &.go-see-south-africa img
+    max-height: 32px
+  &.ralph-lauren .brands img
+    // max-width: 180px
+  /* TODO: Use dynamic 'dark' and 'light' theme classes */
+  &.resorts-world-bimini .devices li svg path,
+  &.go-see-south-africa .devices li svg path,
+  &.karisma-hotels .devices li svg path
+    fill: #222
+  &.clean-slate-nutrition
+    background-color: white

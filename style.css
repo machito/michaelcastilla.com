@@ -1,0 +1,672 @@
+@charset "UTF-8";
+.clearfix::after, .panel .tags::after, .panel::after,
+.panel-inner::after, .portfolio::after, .header .menu::after, .header::after, body::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  padding-bottom: 10px;
+  min-width: 320px;
+  font-family: "gt-pressura-mono-regular";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  color: white;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after, .panel .tags::after, .panel::after,
+.panel-inner::after, .portfolio::after, .header .menu::after, .header::after, body::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+  font-family: "gt-pressura-mono-bold";
+  src: url("fonts/gt-pressura-mono-bold-webfont.eot");
+  src: url("fonts/gt-pressura-mono-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gt-pressura-mono-bold-webfont.woff2") format("woff2"), url("fonts/gt-pressura-mono-bold-webfont.woff") format("woff"), url("fonts/gt-pressura-mono-bold-webfont.ttf") format("truetype"), url("fonts/gt-pressura-mono-bold-webfont.svg#gt_pressura_mono_trialbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gt-pressura-mono-regular";
+  src: url("fonts/gt-pressura-mono-regular-webfont.eot");
+  src: url("fonts/gt-pressura-mono-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gt-pressura-mono-regular-webfont.woff2") format("woff2"), url("fonts/gt-pressura-mono-regular-webfont.woff") format("woff"), url("fonts/gt-pressura-mono-regular-webfont.ttf") format("truetype"), url("fonts/gt-pressura-mono-regular-webfont.svg#gtpressuramonotrial-regularRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.header {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin: 60px auto 50px auto;
+  width: 100%;
+  float: left;
+}
+.header h1 {
+  width: 100%;
+  font-size: 2em;
+  font-family: "gt-pressura-mono-bold";
+  height: auto;
+}
+.header h1 a {
+  color: white;
+  text-decoration: none;
+}
+.header .tagline {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 16px 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "gt-pressura-mono-regular";
+}
+.header .menu {
+  display: none;
+  width: 314px;
+  clear: both;
+  margin: 16px auto 0 auto;
+}
+.header .menu li {
+  display: inline-block;
+  float: left;
+  margin: 15px;
+}
+.header .menu li a {
+  color: #999;
+  text-decoration: none;
+}
+.header .menu li a:hover {
+  color: white;
+  border-color: white;
+}
+
+.portfolio {
+  width: 100%;
+  float: left;
+}
+
+.project {
+  float: left;
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: white;
+  animation-delay: 0.5s;
+}
+
+.panel,
+.panel-inner {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.panel {
+  float: left;
+  display: block;
+  font-family: "ArialRoundedMTBold", "Arial Rounded MT Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transform: all 0.5s ease-in;
+  margin-bottom: 10px;
+  /* TODO: Make the following dynamic with JS */
+  /* TODO: Use dynamic 'dark' and 'light' theme classes */
+}
+.panel h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  height: 26px;
+  float: left;
+}
+.panel h1 a {
+  color: white;
+  float: left;
+  text-decoration: none;
+}
+.panel:active, .panel:focus, .panel:hover {
+  outline: 0 none;
+}
+.panel:hover {
+  -webkit-box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.15);
+}
+.panel.siriusxm-podcasts {
+  background-color: #0000EB;
+}
+.panel.siriusxm-publish {
+  background-color: #291D7C;
+}
+.panel.siriusxm-clips {
+  background-color: #335C97;
+}
+.panel.spoke {
+  background-color: #00D9D6;
+}
+.panel.big-mirror-labs {
+  background-color: #000;
+}
+.panel.big-mirror-labs .panel-inner::before {
+  transition: all 0.5s ease-in;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("../img/bg-bml.jpg");
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.panel.big-mirror-labs .panel-inner:hover::before {
+  opacity: 0.8;
+}
+.panel.ralph-lauren {
+  background-color: #041e3a;
+}
+.panel.spoke {
+  background-color: #00D9D6;
+}
+.panel.karisma-hotels {
+  background-color: white;
+  color: #333;
+}
+.panel.karisma-hotels h1 a,
+.panel.karisma-hotels .highlights,
+.panel.karisma-hotels .tags {
+  color: #333;
+}
+.panel.go-see-south-africa {
+  background-color: #ebebeb;
+  color: #333;
+}
+.panel.go-see-south-africa h1 a,
+.panel.go-see-south-africa .highlights,
+.panel.go-see-south-africa .tags {
+  color: #333;
+}
+.panel.nyc-secure {
+  background-color: #000;
+}
+.panel.nyc-secure .panel-inner {
+  background-image: none;
+}
+.panel.alamo-china, .panel.alamo-europe {
+  background-color: #295EAC;
+}
+.panel.ncl-escape {
+  background-color: #217AAA;
+}
+.panel.enterprise-europe {
+  background-color: #169A5A;
+}
+.panel.toronto-escapes {
+  background-color: #662857;
+}
+.panel.resorts-world-bimini {
+  background-color: #FAFAFA;
+  color: #333333;
+}
+.panel.resorts-world-bimini .panel-inner,
+.panel.resorts-world-bimini h1 a {
+  color: #333333;
+}
+.panel.the-miami-institute {
+  background-color: #000000;
+}
+.panel.one-sale {
+  background-color: #2EC7C3;
+}
+.panel.aeroméxico {
+  background-color: #0b2343;
+}
+.panel.one-sale .brands, .panel.one-sale img, .panel.go-see-south-africa .brands, .panel.go-see-south-africa img {
+  height: 32px;
+}
+.panel.ralph-lauren .brands img {
+  height: 18px;
+}
+.panel.resorts-world-bimini .devices li svg path, .panel.go-see-south-africa .devices li svg path, .panel.karisma-hotels .devices li svg path {
+  fill: #222;
+}
+.panel .devices {
+  position: relative;
+  float: right;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+.panel .devices li {
+  float: left;
+  display: inline-block;
+  margin-left: 8px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+}
+.panel .devices li svg {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+.panel .highlights {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  font-family: "ArialRoundedMTBold", "Arial Rounded MT Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  pointer-events: none;
+  padding: 20% 0;
+  position: relative;
+}
+.panel .tags {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  display: none;
+  font-size: 1em;
+  overflow-x: scroll;
+  pointer-events: none;
+  float: left;
+}
+.panel .tags li {
+  list-style: none;
+  float: left;
+  line-height: 18px;
+}
+.panel .brands {
+  height: 26px;
+  display: block;
+  pointer-events: none;
+  position: relative;
+}
+.panel .brands img {
+  height: 26px;
+  float: left;
+  width: 100%;
+}
+
+.panel-inner {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 100%);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+.panel-inner:hover {
+  background-image: none;
+}
+
+.tes {
+  transition: all 0.1s ease-in;
+}
+.tes:hover {
+  transform: rotate(-5deg);
+}
+
+.heart:hover {
+  animation: pulse 0.5s;
+}
+
+.resume {
+  width: 100%;
+  float: left;
+  color: #222;
+  background-color: white;
+  font-family: "gt-pressura-mono-regular";
+  font-weight: 100;
+  font-size: 16px;
+}
+.resume h1 a, .resume p, .resume a {
+  color: #222;
+}
+.resume .column {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.resume .column p, .resume .column ul {
+  padding-bottom: 10px;
+  line-height: 1.35em;
+}
+@media (min-width: 768px) {
+  .resume .column {
+    width: 50%;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel {
+    width: calc(50% - 5px);
+  }
+  .panel:nth-child(odd) {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  .panel .brands {
+    float: right;
+  }
+  .panel .devices li {
+    margin-left: 12px;
+  }
+  .panel .devices li svg {
+    height: 40px;
+    width: auto;
+  }
+}
+@media (min-width: 1600px) {
+  .panel.ralph-lauren .brands,
+.panel.ralph-lauren .brands img {
+    height: 24px;
+  }
+
+  .panel,
+.panel-inner {
+    border-radius: 8px;
+  }
+
+  .panel {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .panel h1 {
+    font-size: 2em;
+  }
+  .panel .tags {
+    font-size: 1em;
+  }
+  .panel .tags li {
+    line-height: 1.3em;
+    display: inline;
+    margin-right: 10px;
+  }
+  .panel .brands {
+    height: 40px;
+  }
+
+  .panel .brands,
+.panel.one-sale .brands,
+.panel.one-sale img,
+.panel .brands img {
+    height: 40px;
+    width: auto;
+  }
+
+  .panel.go-see-south-africa .brands,
+.panel.go-see-south-africa img {
+    height: 60px;
+    width: auto;
+  }
+
+  .panel .highlights {
+    font-size: 58px;
+    line-height: 58px;
+  }
+
+  .panel .tags {
+    display: block;
+  }
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  .panel h1 {
+    letter-spacing: -1px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
