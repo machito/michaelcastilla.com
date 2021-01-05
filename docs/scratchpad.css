@@ -1,0 +1,89 @@
+.panel:active {
+  animation: pulse .5s;
+}
+.panel.open,
+.panel.open .panel-inner {
+  height: 500px;
+}
+
+&::after {
+  content: '';
+  height: 14px;
+  left: 0;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background: rgb(255,255,255);
+  background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00d4ff",GradientType=1);
+}
+
+.panel.open .highlights,
+.panel.open .devices,
+.panel.open .tags {
+  display: block;
+}
+
+.panel.open:hover .project {
+  display: block;
+}
+
+animation-duration: 3s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+
+transition: all .5s ease-in;
+
+&::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+&.organization {
+  width: 33px;
+}
+&.mobile {
+  width: 17px;
+}
+&.tablet {
+  width: 23px;
+}
+&.desktop {
+  width: 30px;
+}
+
+
+.panel .brands,
+.panel.one-sale .brands,
+.panel.one-sale .brands img,
+.panel .brands img
+  // height: 40px
+  // width: auto
+.panel.go-see-south-africa .brands,
+.panel.go-see-south-africa img
+  // height: 60px
+  // width: auto
+
+  // @font-face
+  //     font-family: 'hk_groteskbold'
+  //     src: url('hkgrotesk-bold-webfont.eot')
+  //     src: url('hkgrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'), url('hkgrotesk-bold-webfont.woff2') format('woff2'), url('hkgrotesk-bold-webfont.woff') format('woff'), url('hkgrotesk-bold-webfont.ttf') format('truetype'), url('hkgrotesk-bold-webfont.svg#hk_groteskbold') format('svg')
+  //     font-weight: normal
+  //     font-style: normal
+
+
+  @media not all and (min-resolution:.001dpcm)
+    .panel h1
+      letter-spacing: -1px
+
+
+
+background-image: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+background-image: linear-gradient(to right,#ff8a00,#da1b60);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;

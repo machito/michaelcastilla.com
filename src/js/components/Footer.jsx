@@ -13,17 +13,18 @@ import Tesla from './Tesla.jsx'
 
 /* Footer component */
 export default function Footer() {
-  const copyright = `© All Rights Reserved 2007-${new Date().getFullYear()}`
-  const colophon = "Made with ❤️ in Brooklyn"
+  const copyright = `Copyright 2007-${new Date().getFullYear()} Machito, Inc.`
+  const colophon = "Made with ❤️ in Brooklyn."
 
   return (
     <div className="footer animated fadeIn">
       <Tesla />
       <p>
-        <span className="copyright" title={copyright}>{copyright}</span><br/>
+        <span className="copyright" title={copyright}>{copyright}</span><br/><br/>
         <span className="colophon" title={colophon}>
-          Made with <span className="heart">❤️</span> in Brooklyn
-        </span>
+          Made in Miami 🏝
+        </span><br/><br/>
+        <span>Built with React + Firebase</span>
       </p>
     </div>
   )
