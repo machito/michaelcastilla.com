@@ -28,7 +28,8 @@
     "webfontloader": "^1.6.28",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
-    "webpack-dev-middleware": "^4.0.2"
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -43,7 +44,7 @@
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack",
-    "deploy": "npm run build && cd dist && /usr/local/Cellar/node/11.10.0/bin/firebase deploy && open https://machito-portfolio.firebaseapp.com/",
+    "deploy": "npm run build && cd dist && firebase deploy && open https://machito-portfolio.firebaseapp.com/",
     "finish": "git add . && git commit -m 'dirty commit' && git push origin master && npm run deploy"
   },
   "babel": {
