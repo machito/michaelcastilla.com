@@ -16,7 +16,7 @@ import Menu from './Menu.jsx'
 export default function Header() {
   const heading = "Michael L. Castilla"
   const headingTitle = `Hi there! My name is ${heading}`
-  const jobTitle = "Product Manager"
+  const jobTitle = "Product Engineer"
   const location = "Remote"
   const tagline = `I'm a ${jobTitle} based in Miami, FL.`
   
