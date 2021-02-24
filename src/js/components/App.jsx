@@ -41,7 +41,6 @@ export default class App extends Component {
     return (
       <div className="container">
         <Helmet>
-          <meta name="description" content="Michael L. Castilla is a product designer based in NYC." />
           <body className="portfolio" />
           <title>Loading...</title>
         </Helmet>
