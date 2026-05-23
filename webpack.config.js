@@ -1,7 +1,4 @@
-// webpack.config.js
-
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
@@ -15,14 +12,15 @@ module.exports = {
   },
   devServer: {
     host: '0.0.0.0',
-    contentBase: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     hot: true,
     historyApiFallback: true,
-    inline: true,
-    stats: 'minimal',
-    open: true
+    open: true,
+    client: {
+      logging: 'warn'
+    }
   },
   module: {
     rules: [
@@ -34,43 +32,28 @@ module.exports = {
       {
         test: /\.(scss|sass)$/,
         use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
+          'style-loader',
+          'css-loader',
+          { loader: 'sass-loader', options: { api: 'modern', sassOptions: { silenceDeprecations: ['import'] } } }
         ]
       },
       {
-        test: /\.(svg|jpg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'img/'
-            }
-          }
-        ]
+        test: /\.(svg|jpg|png)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]'
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'fonts/'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
       }
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html.ejs',
       filename: 'index.html',
