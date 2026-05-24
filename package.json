@@ -39,8 +39,7 @@
   },
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack",
-    "build:prod": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack"
   },
   "babel": {
     "presets": [
