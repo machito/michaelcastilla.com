@@ -24,7 +24,7 @@ export default function Footer() {
         <span className="colophon" title={colophon}>
           Made in Miami 🏝
         </span><br/><br/>
-        <span>Built with React + Firebase</span>
+        <span>Built with React + Supabase</span>
       </p>
     </div>
   )

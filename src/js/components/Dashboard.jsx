@@ -25,29 +25,14 @@ export default class Dashboard extends Component {
       stats: null
     }
   }
-  loadStats() {
-    let db = Data.database().ref('dashboard')
-    db.on('value', snapshot => {
-      const items = Object.values(snapshot.val())
-      // console.log('items', items)
-      let stats = []
-      items.map((item, index) => {
-        stats.push({
-          active: item.active,
-          id: item.id,
-          label: item.label,
-          stat: item.stat,
-          title: item.title
-        })
-      })
-      /* Sort stats by stat ID */
-      stats = _.sortBy(stats, 'id')
-      /* Filter only stats that are "active" */
-      stats = _.filter(stats, (stat) => {
-        return stat.active === true
-      })
-      this.setState({ stats: stats })
-    })
+  async loadStats() {
+    const { data, error } = await Data
+      .from('dashboard')
+      .select('*')
+      .eq('active', true)
+      .order('id')
+    if (error) { console.error('loadStats error:', error); return }
+    this.setState({ stats: data })
   }
   componentDidMount() {
     this.loadStats()

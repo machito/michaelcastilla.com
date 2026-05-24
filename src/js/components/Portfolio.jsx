@@ -30,47 +30,21 @@ export default class Portfolio extends Component {
         class: "portfolio animated fadeIn"
       }
   }
-  loadProjects() {
-    let db = Data.database().ref('projects')
-    db.on('value', snapshot => {
-      const items = Object.values(snapshot.val())
-      let projects = []
-      items.map((item, index) => {
-        projects.push({
-          id: item.id,
-          active: item.active,
-          project: item.project,
-          brands: item.brands,
-          logo: item.logo,
-          highlights: item.highlights,
-          tags: item.tags,
-          devices: item.devices,
-          url: item.url,
-          online: item.online,
-          slug: item.slug
-        })
-      })
-      /* Sort projects by project ID */
-      projects = _.sortBy(projects, 'id')
-      /* Filter only projects that are "active" */
-      projects = _.filter(projects, (project) => {
-        return project.active === true
-      })
-      this.setState({ projects: projects })
-    })
+  async loadProjects() {
+    const { data, error } = await Data
+      .from('projects')
+      .select('*')
+      .eq('active', true)
+      .order('id')
+    if (error) { console.error('loadProjects error:', error); return }
+    this.setState({ projects: data })
   }
   scrollToTop() {
     window.scroll({top: 0, left: 0, behavior: 'smooth' })
   }
-  loadLocalProjects() {
-    let projects = Data
-    this.setState({ projects: projects })
-  }
   componentDidMount() {
-    // this.loadLocalProjects()
     this.scrollToTop()
     this.loadProjects()
-    // this.setState({class: "portfolio animated fadeIn"}) // TODO: Fix this
   }
   render() {
     const className = this.state.class

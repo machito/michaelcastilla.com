@@ -44,17 +44,13 @@ export default class Contact extends Component {
     });
   }
 
-  handleSubmit(event) {
-    alert('A form has been submitted.');
-    event.preventDefault();
-
-    Data.database().ref('contact').push().set({
-      name: this.state.name,
-      email: this.state.email,
-      message : this.state.message
-    });
-
-    this.setState({confirmation: 'Your message has been delivered. Thank you.'})
+  async handleSubmit(event) {
+    event.preventDefault()
+    const { error } = await Data
+      .from('contact')
+      .insert({ name: this.state.name, email: this.state.email, message: this.state.message })
+    if (error) { console.error('contact submit error:', error); return }
+    this.setState({ confirmation: 'Your message has been delivered. Thank you.' })
   }
 
   render() {
