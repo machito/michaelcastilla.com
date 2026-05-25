@@ -233,6 +233,19 @@
     "online": false,
     "slug": "go-see-south-africa"
   },
+  "wmx": {
+    "id": 23,
+    "active": true,
+    "project": "WMX",
+    "brands": "WMX",
+    "logo": "wmx",
+    "highlights": ["placeholder 1", "placeholder 2", "placeholder 3", "placeholder 4"],
+    "tags": ["leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end"],
+    "devices": ["people", "mobile", "tablet", "desktop"],
+    "url": "https://www.wmx.com",
+    "online": true,
+    "slug": "wmx"
+  },
   "dot-co": {
     "id": 22,
     "active": true,
