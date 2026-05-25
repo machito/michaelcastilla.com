@@ -19,7 +19,8 @@ insert into projects (id, active, project, brands, logo, highlights, tags, devic
 (16, false, 'Go See South Africa', 'South African Airways', 'flysaa', '{"1 airline","40+ activities","3MM+ visitors","1 destination"}', '{"front-end","back-end","ads","2014"}', '{"mobile","tablet","desktop"}', 'http://www.goseesouthafrica.com', false, 'go-see-south-africa'),
 (17, true, '1Sale', '1Sale', '1sale', '{"100k+ deals","120MM+ visitors","$160MM+ revenue","1 platform"}', '{"leadership","strategy","ux","ui","front-end","back-end","email","2014"}', '{"people","mobile","tablet","desktop"}', 'https://www.1sale.com', true, '1sale'),
 (-1, true, 'Apple', 'Apple', 'apple', '{"1B+ users","190+ countries","100+ products","1 ecosystem"}', '{"program-leadership","business-operations","leadership","strategy","ux","ui","design-systems","front-end","back-end","api","email","ads"}', '{"people","mobile","tablet","desktop"}', 'https://www.apple.com', true, 'apple'),
-(21, true, 'Pandora', 'Pandora', 'pandora', '{"placeholder 1","placeholder 2","placeholder 3","placeholder 4"}', '{"leadership","strategy","ux","ui","design-systems","front-end","back-end","api"}', '{"people","mobile","tablet","desktop"}', 'https://www.pandora.com', true, 'pandora')
+(21, true, 'Pandora', 'Pandora', 'pandora', '{"placeholder 1","placeholder 2","placeholder 3","placeholder 4"}', '{"leadership","strategy","ux","ui","design-systems","front-end","back-end","api"}', '{"people","mobile","tablet","desktop"}', 'https://www.pandora.com', true, 'pandora'),
+(22, true, '.CO', '.CO', 'co', '{"placeholder 1","placeholder 2","placeholder 3","placeholder 4"}', '{"leadership","strategy","ux","ui","design-systems","front-end","back-end"}', '{"people","mobile","tablet","desktop"}', 'https://www.go.co', true, 'dot-co')
 on conflict (id) do nothing;
 
 -- seed dashboard stats (from Firebase production)

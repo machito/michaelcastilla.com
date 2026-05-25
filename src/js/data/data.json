@@ -233,6 +233,19 @@
     "online": false,
     "slug": "go-see-south-africa"
   },
+  "dot-co": {
+    "id": 22,
+    "active": true,
+    "project": ".CO",
+    "brands": ".CO",
+    "logo": "co",
+    "highlights": ["placeholder 1", "placeholder 2", "placeholder 3", "placeholder 4"],
+    "tags": ["leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end"],
+    "devices": ["people", "mobile", "tablet", "desktop"],
+    "url": "https://www.go.co",
+    "online": true,
+    "slug": "dot-co"
+  },
   "1sale": {
     "id": 17,
     "active": true,
