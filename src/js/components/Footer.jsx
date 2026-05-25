@@ -22,7 +22,7 @@ export default function Footer() {
       <p>
         <span className="copyright" title={copyright}>{copyright}</span><br/><br/>
         <span className="colophon" title={colophon}>
-          Built in Brooklyn. Based in Florida. 🌴
+          Built in Brooklyn 🗽. Based in Florida. 🌴
         </span><br/><br/>
         <span>Built with React + Supabase</span>
       </p>
