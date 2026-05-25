@@ -38,14 +38,14 @@ export default class Resume extends Component {
     return (
       <div className="content animated fadeIn">
         <Helmet>
-          <title>Michael L. Castilla · Resume</title>
+          <title>Michael Castilla · Resume</title>
           <link rel="shortcut icon" href="/img/document.png"/>
           <body className="resume" />
         </Helmet>
         <div className="row">
           <div className="column">
             <h2>Intro</h2>
-            <p>Hi, my name is Michael L. Castilla. I'm a product designer from Miami currently based in New York City with a passion for understanding the intersection of people creating products and the process and tools they use.</p>
+            <p>Hi, my name is Michael Castilla. I'm a product designer from Miami currently based in New York City with a passion for understanding the intersection of people creating products and the process and tools they use.</p>
 
             <p>My approach to digital strategy – called product operations – focuses on a streamlined customer validation process powered by lightweight design systems and data-driven software development practices.</p>
 

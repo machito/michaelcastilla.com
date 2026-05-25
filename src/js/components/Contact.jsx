@@ -54,7 +54,7 @@ export default class Contact extends Component {
   }
 
   render() {
-    const title = "Michael L. Castilla · Contact";
+    const title = "Michael Castilla · Contact";
     const confirmation = this.state.confirmation
     return (
       <div className="content">

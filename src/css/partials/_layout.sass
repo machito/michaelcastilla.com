@@ -62,10 +62,11 @@
 
   .menu
     clear: both
+    width: 100%
     padding: .67em 0 0 0
     display: flex
     justify-content: center
-    @extend .clearfix
+    align-items: center
 
     li
       font-size: 16px
@@ -76,12 +77,8 @@
 
       &:last-child
         margin-right: 0
-      &.home,
-      &.contact
-        top: -2px
-        position: relative
       &.home
-        margin: auto 15px auto 0
+        margin-right: 15px
       &.home,
       &.contact
         img
@@ -104,6 +101,8 @@
         &:hover
           color: white
           border-color: white
+          transform: scale(1.1)
+          display: inline-block
 
 .home,
 .about,
@@ -228,3 +227,4 @@
   padding-bottom: 4em
   color: #e5e5e5
   animation-delay: 1.5s
+  text-transform: uppercase

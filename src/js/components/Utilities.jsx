@@ -12,6 +12,7 @@ const Utilities = {
           .toLowerCase()
           .replace('1','one-')
           .replace('&','and')
+          .replace(/\./g,'')
           .split(' ')
           .join('-')
       return d
