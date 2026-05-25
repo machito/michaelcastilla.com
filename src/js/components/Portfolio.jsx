@@ -35,7 +35,7 @@ export default class Portfolio extends Component {
       .from('projects')
       .select('*')
       .eq('active', true)
-      .order('id')
+      .order('sort_order', { ascending: false })
     if (error) { console.error('loadProjects error:', error); return }
     this.setState({ projects: data })
   }
