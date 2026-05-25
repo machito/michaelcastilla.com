@@ -1,7 +1,15 @@
 const path = require('path')
+const fs = require('fs')
+const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+
+// Read .env manually so DefinePlugin always has the latest values
+const envFile = path.resolve(__dirname, '.env')
+const envVars = fs.existsSync(envFile)
+  ? Object.fromEntries(fs.readFileSync(envFile, 'utf8').split('\n').filter(l => l.includes('=')).map(l => { const [k, ...v] = l.split('='); return [k.trim(), v.join('=').trim()] }))
+  : {}
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -56,6 +64,9 @@ module.exports = {
   },
   plugins: [
     new Dotenv({ systemvars: true }),
+    new webpack.DefinePlugin({
+      'process.env.SUPABASE_ADMIN_KEY': JSON.stringify(envVars.SUPABASE_ADMIN_KEY || '')
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html.ejs',
       filename: 'index.html',

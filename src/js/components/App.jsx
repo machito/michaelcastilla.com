@@ -29,6 +29,9 @@ import { About } from './Templates.jsx'
 
 /* Contact component */
 
+/* CMS component */
+import CMS from './../components/CMS.jsx'
+
 /* 404 component */
 import Ouch from './../components/Ouch.jsx'
 
@@ -45,16 +48,21 @@ export default class App extends Component {
           <title>Loading...</title>
         </Helmet>
         <Router>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/portfolio/:slug" component={Portfolio} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/cv" component={CV} />
-            <Route path="/" component={Ouch} />
-          </Switch>
-          <Footer />
+          <Route exact path="/cms" component={CMS} />
+          <Route path={/^(?!\/cms).*/} render={() => (
+            <span>
+              <Header />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/portfolio" component={Portfolio} />
+                <Route path="/portfolio/:slug" component={Portfolio} />
+                <Route exact path="/resume" component={Resume} />
+                <Route exact path="/cv" component={CV} />
+                <Route path="/" component={Ouch} />
+              </Switch>
+              <Footer />
+            </span>
+          )} />
         </Router>
       </div>
     )
