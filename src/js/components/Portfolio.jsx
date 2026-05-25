@@ -57,7 +57,7 @@ export default class Portfolio extends Component {
     return (
       <div className="content">
         <Helmet>
-          <title>Michael L. Castilla · Portfolio</title>
+          <title>Michael Castilla · Portfolio</title>
           <link rel="shortcut icon" href="/img/briefcase.png"/>
         </Helmet>
         {portfolio && (

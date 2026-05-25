@@ -12,7 +12,7 @@ export function About() {
   return (
     <div className="content animated fadeIn">
       <Helmet>
-        <title>Michael L. Castilla · About</title>
+        <title>Michael Castilla · About</title>
         <body className="about" />
       </Helmet>
       <div class="row">

@@ -14,7 +14,7 @@ export default function Ouch() {
   return (
     <div className="footer">
       <Helmet>
-        <title>Michael L. Castilla · 404</title>
+        <title>Michael Castilla · 404</title>
       </Helmet>
       <h2>404 - Not Found</h2>
     </div>

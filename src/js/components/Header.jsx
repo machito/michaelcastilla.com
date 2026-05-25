@@ -14,7 +14,7 @@ import Menu from './Menu.jsx'
 
 /* Header component */
 export default function Header() {
-  const heading = "Michael L. Castilla"
+  const heading = "Michael Castilla"
   const headingTitle = `Hi there! My name is ${heading}`
   const jobTitle = "Product Engineer"
   const location = "Remote"
@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <div className="header animated fadeInDown">
       <Link to="/" tabIndex="0">
-        <img className="bitmoji"  title={headingTitle} src="img/michaelcastilla-bitmoji.png" alt="Michael L. Castilla" />
+        <img className="bitmoji"  title={headingTitle} src="img/michaelcastilla-bitmoji.png" alt="Michael Castilla" />
       </Link>
       <h1 title={headingTitle}>
         <Link to="/" tabIndex="0">{heading}</Link>
