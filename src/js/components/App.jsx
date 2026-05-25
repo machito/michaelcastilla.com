@@ -53,9 +53,9 @@ export default class App extends Component {
             <span>
               <Header />
               <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/portfolio" component={Portfolio} />
+                <Route exact path="/" component={Portfolio} />
                 <Route path="/portfolio/:slug" component={Portfolio} />
+                <Route exact path="/stats" component={Home} />
                 <Route exact path="/resume" component={Resume} />
                 <Route exact path="/cv" component={CV} />
                 <Route path="/" component={Ouch} />

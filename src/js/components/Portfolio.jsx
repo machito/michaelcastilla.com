@@ -61,7 +61,7 @@ export default class Portfolio extends Component {
           <link rel="shortcut icon" href="/img/briefcase.png"/>
         </Helmet>
         {portfolio && (
-          <Route exact path="/portfolio" render={() => (
+          <Route exact path="/" render={() => (
             <span>
               <Nav />
               <div className={className}>{portfolio}</div>

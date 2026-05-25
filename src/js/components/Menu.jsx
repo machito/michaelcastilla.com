@@ -18,7 +18,7 @@ export default function Menu() {
         </NavLink>
       </li>
       {/*<li><NavLink activeClassName="active" to="/about" title="About">About</NavLink></li>*/}
-      <li><NavLink activeClassName="active" to="/portfolio" title="Check out my portfolio" tabIndex="2">Portfolio</NavLink></li>
+      <li><NavLink activeClassName="active" to="/stats" title="Stats" tabIndex="2">Stats</NavLink></li>
       <li><NavLink activeClassName="active" to="/resume" title="Are you hiring?" tabIndex="3">Resume</NavLink></li>
       {/*<li><NavLink activeClassName="active" to="/cv" title="Learn more about my work" tabIndex="4">CV</NavLink></li>*/}
       <li className="contact">

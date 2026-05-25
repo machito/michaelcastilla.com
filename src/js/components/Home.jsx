@@ -25,7 +25,7 @@ export default class Home extends Component {
     return (
       <div>
         <Helmet>
-          <title>Michael Castilla · Product Engineer · Remote</title>
+          <title>Michael Castilla · Stats</title>
           <link rel="shortcut icon" href="/img/voltage.png"/>
           <body className="home" />
         </Helmet>
