@@ -12,6 +12,19 @@
     "online": true,
     "slug": "siriusxm-podcasts"
   },
+  "pandora": {
+    "id": 21,
+    "active": true,
+    "project": "Pandora",
+    "brands": "Pandora",
+    "logo": "pandora",
+    "highlights": ["placeholder 1", "placeholder 2", "placeholder 3", "placeholder 4"],
+    "tags": ["leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api"],
+    "devices": ["people", "mobile", "tablet", "desktop"],
+    "url": "https://www.pandora.com",
+    "online": true,
+    "slug": "pandora"
+  },
   "siriusxm-publish": {
     "id": 1,
     "active": true,
