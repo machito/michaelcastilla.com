@@ -13,7 +13,7 @@ import Tesla from './Tesla.jsx'
 
 /* Footer component */
 export default function Footer() {
-  const copyright = `Copyright 2007-${new Date().getFullYear()} Machito, Inc.`
+  const copyright = `© 2007-${new Date().getFullYear()} Machito, Inc.`
   const colophon = "Made with ❤️ in Brooklyn."
 
   return (
