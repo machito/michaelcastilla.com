@@ -418,6 +418,7 @@
     flex: 1
 
   .case-header-center
+    flex: 1
     display: flex
     justify-content: center
     align-items: center
@@ -467,9 +468,10 @@
     border-bottom: 1px solid var(--d)
 
   .case-stat
-    padding: 44px 24px
+    padding: 32px 12px
     border-right: 1px solid var(--d)
     text-align: center
+    min-width: 0
 
     &:nth-child(2n)
       border-right: none
@@ -479,7 +481,7 @@
 
   .case-stat-value
     display: block
-    font-size: 3em
+    font-size: 2.4em
     font-weight: 700
     line-height: 1
     letter-spacing: -.03em
@@ -528,7 +530,7 @@
 
   .case-narrative-body
     margin: 0
-    font-size: 1.1em
+    font-size: 1.27em
     line-height: 1.8
     color: var(--t1)
     @extend .hk-grotesk-regular
@@ -600,6 +602,9 @@
     .case-lede
       p
         font-size: 2.6em
+
+    .case-narrative-body
+      font-size: 1.1em
 
     .case-narrative-row
       flex-direction: row
