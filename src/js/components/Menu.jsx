@@ -18,8 +18,8 @@ export default function Menu() {
         </NavLink>
       </li>
       {/*<li><NavLink activeClassName="active" to="/about" title="About">About</NavLink></li>*/}
-      <li><NavLink activeClassName="active" to="/resume" title="Are you hiring?" tabIndex="2">📄</NavLink></li>
-      <li><NavLink activeClassName="active" to="/stats" title="Check out my stats!" tabIndex="3">📊</NavLink></li>
+      <li><NavLink activeClassName="active" to="/resume" title="📄 Are you hiring?" tabIndex="2">Resume</NavLink></li>
+      <li><NavLink activeClassName="active" to="/stats" title="📊 Check out my stats!" tabIndex="3">Stats</NavLink></li>
       {/*<li><NavLink activeClassName="active" to="/cv" title="Learn more about my work" tabIndex="4">CV</NavLink></li>*/}
       <li className="contact">
         <a href="mailto:michaelcastilla@gmail.com" title="Contact me">
