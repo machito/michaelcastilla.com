@@ -74,7 +74,7 @@
     "tags": ["leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "2018"],
     "devices": ["mobile", "tablet", "desktop"],
     "url": "https://www.siriusxm.com/clips",
-    "online": true,
+    "online": false,
     "slug": "siriusxm-clips"
   },
   "spoke": {
@@ -279,10 +279,10 @@
     "brands": "Stableterm",
     "logo": "stableterm",
     "highlights": ["placeholder 1", "placeholder 2", "placeholder 3", "placeholder 4"],
-    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api"],
+    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api", "2026"],
     "devices": ["people", "mobile", "tablet", "desktop"],
-    "url": "https://www.stableterm.com",
-    "online": true,
+    "url": null,
+    "online": false,
     "slug": "stableterm"
   },
   "quicknode": {
@@ -291,8 +291,8 @@
     "project": "Quicknode",
     "brands": "Quicknode",
     "logo": "quicknode",
-    "highlights": ["1M+ developers", "99.9% uptime", "20+ chains", "1 platform"],
-    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api"],
+    "highlights": ["99.9% uptime", "130+ networks", "80+ chains", "1 platform"],
+    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api", "2025-current"],
     "devices": ["people", "mobile", "tablet", "desktop"],
     "url": "https://www.quicknode.com",
     "online": true,
@@ -305,7 +305,7 @@
     "brands": "Apple",
     "logo": "apple",
     "highlights": ["1B+ users", "190+ countries", "100+ products", "1 ecosystem"],
-    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api", "email", "ads"],
+    "tags": ["program-leadership", "business-operations", "leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end", "api", "email", "ads", "2021-2025"],
     "devices": ["people", "mobile", "tablet", "desktop"],
     "url": "https://www.apple.com",
     "online": true,

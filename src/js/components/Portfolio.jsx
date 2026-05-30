@@ -18,6 +18,9 @@ import { Data } from './../controllers/data.js'
 /* Project component */
 import Project from './Project.jsx'
 
+/* ProjectDetail component */
+import ProjectDetail from './ProjectDetail.jsx'
+
 /* Nav component */
 import Nav from './Nav.jsx'
 
@@ -69,11 +72,10 @@ export default class Portfolio extends Component {
           )} />
         )}
         {projects && (
-          <Route path="/portfolio/:slug" render={({ match }) => (
-            <div className="portfolio project">
-              <Project item={_.find(projects, (p) => { return p.slug === match.params.slug})} />
-            </div>
-          ) || 'Loading projects...'} />
+          <Route path="/portfolio/:slug" render={({ match }) => {
+            const project = _.find(projects, (p) => p.slug === match.params.slug)
+            return <ProjectDetail item={project} allProjects={projects} />
+          }} />
         )}
       </div>
     )
