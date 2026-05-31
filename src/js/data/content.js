@@ -132,10 +132,10 @@ const content = {
   },
 
   'dot-co': {
-    overview: ".CO is the domain registry behind some of the world's most recognized short URLs — t.co, AngelList, and thousands of startups that chose .CO because it said something. I led product and design for the next chapter of the brand.",
-    problem: ".CO had remarkable brand recognition it wasn't fully capitalizing on. Startups, creators, and companies chose .CO for its connotations — ambitious, modern, company — but the registry's own digital presence didn't reflect that positioning. The brand was underselling itself.",
-    solution: "Redesigned the .CO brand experience and digital platform to position it as the definitive domain for people building something. Clear messaging, a streamlined registration experience, and a brand language borrowed from the startup culture that had made .CO credible in the first place.",
-    impact: "Platform serving the domain behind hundreds of global brands. New brand and digital experience launched.",
+    overview: ".CO Internet created the .co domain extension — the TLD behind t.co, AngelList, and thousands of startups that chose it because it said something. In 2012, I worked with their team on a series of landing pages to sharpen how their website converted visitors into registrations.",
+    problem: "The .co domain had real momentum with the startup world, but .CO Internet's website wasn't making the most of the traffic it was drawing. Visitors coming in from campaigns and search had no focused landing experience — just a general homepage that asked them to do too many things at once.",
+    solution: "Designed and built a set of targeted landing pages for the .CO Internet website, each built around a single conversion goal and tighter messaging. The pages reduced friction for specific traffic sources and gave the team something they could test and iterate against.",
+    impact: "Landing page work delivered during .co's early growth years, when the domain was still establishing itself as the go-to TLD for companies and creators.",
   },
 
   '1sale': {
@@ -157,6 +157,13 @@ const content = {
     problem: "Web3 developer tooling in 2019 was technically capable but productively hostile. Documentation was sparse, dashboards were opaque, onboarding required expertise the platform was supposed to eliminate, and reliability was inconsistent. Quicknode was technically superior to competitors but wasn't winning on experience.",
     solution: "Led the redesign of the developer experience end to end — from the first sign-up flow through the daily dashboard to the API reference. Established a design system for consistent UI across all product surfaces, and a product ops framework that let the team prioritize the developer feedback loop over internal assumptions about what builders needed.",
     impact: "99.9% uptime across 80+ chains and 130+ networks. Quicknode became the default infrastructure choice for serious Web3 teams.",
+  },
+
+  'back-to-you': {
+    overview: "Back to You Rehab & Therapy is a chiropractic and physical therapy group with five locations across Florida and Michigan. They came to me in 2024 with a website that wasn't keeping pace with their growth — and a clear vision for what it needed to become.",
+    problem: "Five locations, two states, and a business actively opening new clinics — but a website built as if they were still a single-location practice. Content couldn't be managed independently per location, new openings required developer intervention, and the site wasn't reflecting the quality of care the team was delivering.",
+    solution: "Before writing a line of code, I ran an in-person discovery workshop with the Florida team — mapping their growth plans, patient journey, and operational needs. What came out of it was a WordPress rebuild designed around location-first architecture: each clinic gets its own manageable presence, new locations can be added without a rebuild, and the content system puts the team in control of their own story.",
+    impact: "A platform their growing team can own. Not just a site that looks better — one built to scale as they continue opening new locations.",
   },
 
   'apple': {

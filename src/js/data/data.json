@@ -251,10 +251,10 @@
     "active": true,
     "project": ".CO",
     "brands": ".CO",
-    "logo": "co",
-    "highlights": ["placeholder 1", "placeholder 2", "placeholder 3", "placeholder 4"],
-    "tags": ["leadership", "strategy", "ux", "ui", "design-systems", "front-end", "back-end"],
-    "devices": ["people", "mobile", "tablet", "desktop"],
+    "logo": "co.png",
+    "highlights": ["1 domain", "2M+ customers", "12 integrations", "1 platform"],
+    "tags": ["ux", "ui", "front-end", "2012"],
+    "devices": ["mobile", "tablet", "desktop"],
     "url": "https://www.go.co",
     "online": true,
     "slug": "dot-co"
@@ -310,5 +310,18 @@
     "url": "https://www.apple.com",
     "online": true,
     "slug": "apple"
+  },
+  "back-to-you": {
+    "id": 24,
+    "active": true,
+    "project": "Back To You",
+    "brands": "Back to You Rehab & Therapy",
+    "logo": "back-to-you.png",
+    "highlights": ["5 locations", "2 states", "15 doctors", "1 website"],
+    "tags": ["strategy", "ux", "ui", "front-end", "workshops", "2024"],
+    "devices": ["mobile", "tablet", "desktop"],
+    "url": "https://backtoyourehab.com",
+    "online": true,
+    "slug": "back-to-you"
   }
 }

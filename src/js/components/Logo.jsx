@@ -12,9 +12,8 @@ export default function Logo(props) {
     let src = props.src
     let brands = props.brands
     let dir = '/img/'
-    let ext = '.svg'
     let prefix = 'logo-'
-    let url = dir + prefix + src + ext
+    let url = src.includes('.') ? dir + prefix + src : dir + prefix + src + '.svg'
     return <img src={url} alt={brands} title={brands} />
   }
 }
