@@ -316,7 +316,7 @@
     "active": true,
     "project": "Back to You",
     "brands": "Back to You Rehab & Therapy",
-    "logo": "back-to-you",
+    "logo": "back-to-you.png",
     "highlights": ["5 locations", "2 states", "15 doctors", "1 website"],
     "tags": ["strategy", "ux", "ui", "front-end", "workshops", "2024"],
     "devices": ["mobile", "tablet", "desktop"],
