@@ -28,6 +28,7 @@ const colors = {
   'stableterm':          { bg: '#0d0a1a',                  color: '#C084FC', theme: 'dark'  },
   'quicknode':           { bg: 'oklch(89% .220298 144.5)', color: '#0a1628', theme: 'light' },
   'apple':               { bg: '#f5f5f7',                  color: '#1d1d1f', theme: 'light' },
+  'back-to-you':         { bg: '#1B7A5A',                  color: '#ffffff', theme: 'dark'  },
 }
 
 export default colors

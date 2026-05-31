@@ -159,6 +159,13 @@ const content = {
     impact: "99.9% uptime across 80+ chains and 130+ networks. Quicknode became the default infrastructure choice for serious Web3 teams.",
   },
 
+  'back-to-you': {
+    overview: "Back to You Rehab & Therapy is a chiropractic and physical therapy group with five locations across Florida and Michigan. They came to me in 2024 with a website that wasn't keeping pace with their growth — and a clear vision for what it needed to become.",
+    problem: "Five locations, two states, and a business actively opening new clinics — but a website built as if they were still a single-location practice. Content couldn't be managed independently per location, new openings required developer intervention, and the site wasn't reflecting the quality of care the team was delivering.",
+    solution: "Before writing a line of code, I ran an in-person discovery workshop with the Florida team — mapping their growth plans, patient journey, and operational needs. What came out of it was a WordPress rebuild designed around location-first architecture: each clinic gets its own manageable presence, new locations can be added without a rebuild, and the content system puts the team in control of their own story.",
+    impact: "A platform their growing team can own. Not just a site that looks better — one built to scale as they continue opening new locations.",
+  },
+
   'apple': {
     overview: "Apple operates at a scale where product decisions aren't measured in users but in billions of moments. I contributed to program leadership and product operations across initiatives that touch the products people carry with them every day.",
     problem: "At Apple's scale, even small coordination inefficiencies compound across enormous teams. Product tracks working across hardware, software, and services need shared tooling, clear handoffs, and design standards that can hold across hundreds of contributors without requiring constant oversight.",
