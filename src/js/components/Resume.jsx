@@ -36,11 +36,11 @@ export default class Resume extends Component {
               <li>Supabase, PostgreSQL, Firebase, Redis</li>
               <li>AWS, Vercel, Cloudflare, GitHub Actions</li>
               <li>Linear, Notion, Jira, Confluence</li>
-              <li>PostHog, Segment, Mixpanel, Amplitude</li>
+              <li>PostHog, Mixpanel, Metabase</li>
               <li>Claude, Cursor, GitHub Copilot</li>
               <li>Git, GitHub, CI/CD pipelines</li>
               <li>Webpack, Vite, Turborepo</li>
-              <li>WordPress, Webflow</li>
+              <li>HubSpot, Segment, Slack</li>
             </ul>
 
             <h2>Clients</h2>
