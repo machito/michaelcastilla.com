@@ -83,14 +83,14 @@ export default class Resume extends Component {
             <div className="experience">
               <p>
                 <strong>Head of Design / Product Operations</strong><br/>
-                <em>QuickNode (2025–Present)</em><br/>
+                <em>Quicknode (2025–Present)</em><br/>
                 Leading developer experience design and product operations across 80+ chains and 130+ networks for the web3 infrastructure platform.
               </p>
             </div>
 
             <div className="experience">
               <p>
-                <strong>Program Lead, Product Operations</strong><br/>
+                <strong>Senior Software Engineer</strong><br/>
                 <em>Apple (2021–2025)</em><br/>
                 Cross-functional program leadership across product, design, and engineering for consumer and developer-facing initiatives across the Apple ecosystem.
               </p>
