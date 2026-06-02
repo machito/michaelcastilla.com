@@ -28,15 +28,57 @@ export default class Resume extends Component {
             <h2>Intro</h2>
             <p>I'm Michael Castilla, a Product Engineer based in Port St. Lucie, FL. I have 15+ years of experience building digital products — from consumer apps and developer tools to internal platforms and GTM systems. My work spans product operations, design systems, UX, and front-end engineering across companies at every scale, from early-stage startups to Apple.</p>
 
-            <h2>Experience</h2>
+            <h2>Tools</h2>
+            <ul>
+              <li>Figma, Framer, Storybook</li>
+              <li>React, TypeScript, Next.js, Node.js</li>
+              <li>Sass, Tailwind, CSS Modules</li>
+              <li>Supabase, PostgreSQL, Firebase, Redis</li>
+              <li>AWS, Vercel, Cloudflare, GitHub Actions</li>
+              <li>Linear, Notion, Jira, Confluence</li>
+              <li>PostHog, Segment, Mixpanel, Amplitude</li>
+              <li>Claude, Cursor, GitHub Copilot</li>
+              <li>Git, GitHub, CI/CD pipelines</li>
+              <li>Webpack, Vite, Turborepo</li>
+              <li>WordPress, Webflow</li>
+            </ul>
 
-            <div className="experience">
-              <p>
-                <strong>Founder, Product &amp; Design</strong><br/>
-                <em>Stableterm (2026–Present)</em><br/>
-                Building a stablecoin API and terminal platform, including Peggy — an AI-powered chatbot for querying on-chain data across chains and wallets.
-              </p>
-            </div>
+            <h2>Clients</h2>
+            <ul>
+              <li>.CO Internet</li>
+              <li>Aeroméxico</li>
+              <li>Alamo Rent-A-Car</li>
+              <li>Alcatel-Lucent</li>
+              <li>Anteros Cruises</li>
+              <li>Back To You Rehab &amp; Therapy</li>
+              <li>Chantecaille</li>
+              <li>City of New York</li>
+              <li>Enterprise Rent-A-Car</li>
+              <li>First Quality</li>
+              <li>James L. Knight Foundation</li>
+              <li>JetBlue Airways</li>
+              <li>Karisma Hotels &amp; Resorts</li>
+              <li>Macy's</li>
+              <li>Microsoft</li>
+              <li>Neiman Marcus</li>
+              <li>Norwegian Cruise Line</li>
+              <li>Palm Beach Food &amp; Wine Festival</li>
+              <li>Ralph Lauren</li>
+              <li>Resorts World Bimini</li>
+              <li>Ripley's Entertainment</li>
+              <li>South African Airways</li>
+              <li>South Beach Food &amp; Wine Festival</li>
+              <li>The Biltmore Hotel Coral Gables</li>
+              <li>The Leiden Collection</li>
+              <li>The MIAMI Institute</li>
+              <li>Toronto Escapes</li>
+            </ul>
+
+          </div>
+
+          <div className="column">
+
+            <h2>Experience</h2>
 
             <div className="experience">
               <p>
@@ -51,14 +93,6 @@ export default class Resume extends Component {
                 <strong>Program Lead, Product Operations</strong><br/>
                 <em>Apple (2021–2025)</em><br/>
                 Cross-functional program leadership across product, design, and engineering for consumer and developer-facing initiatives across the Apple ecosystem.
-              </p>
-            </div>
-
-            <div className="experience">
-              <p>
-                <strong>Product &amp; Design Lead</strong><br/>
-                <em>WMX</em><br/>
-                Building a media commerce platform where editorial content and transactional experiences are a single native experience.
               </p>
             </div>
 
@@ -109,56 +143,6 @@ export default class Resume extends Component {
 
             <p>Featured multiple times for technology initiatives<br/>
             <em>The Miami Herald (2013, 2012, 1995)</em></p>
-
-          </div>
-
-          <div className="column">
-
-            <h2>Tools</h2>
-            <ul>
-              <li>Figma, Framer, Storybook</li>
-              <li>React, TypeScript, Next.js, Node.js</li>
-              <li>Sass, Tailwind, CSS Modules</li>
-              <li>Supabase, PostgreSQL, Firebase, Redis</li>
-              <li>AWS, Vercel, Cloudflare, GitHub Actions</li>
-              <li>Linear, Notion, Jira, Confluence</li>
-              <li>PostHog, Segment, Mixpanel, Amplitude</li>
-              <li>Claude, Cursor, GitHub Copilot</li>
-              <li>Git, GitHub, CI/CD pipelines</li>
-              <li>Webpack, Vite, Turborepo</li>
-              <li>WordPress, Webflow</li>
-            </ul>
-
-            <h2>Clients</h2>
-            <ul>
-              <li>.CO Internet</li>
-              <li>Aeroméxico</li>
-              <li>Alamo Rent-A-Car</li>
-              <li>Alcatel-Lucent</li>
-              <li>Anteros Cruises</li>
-              <li>Back To You Rehab &amp; Therapy</li>
-              <li>Chantecaille</li>
-              <li>City of New York</li>
-              <li>Enterprise Rent-A-Car</li>
-              <li>First Quality</li>
-              <li>James L. Knight Foundation</li>
-              <li>JetBlue Airways</li>
-              <li>Karisma Hotels &amp; Resorts</li>
-              <li>Macy's</li>
-              <li>Microsoft</li>
-              <li>Neiman Marcus</li>
-              <li>Norwegian Cruise Line</li>
-              <li>Palm Beach Food &amp; Wine Festival</li>
-              <li>Ralph Lauren</li>
-              <li>Resorts World Bimini</li>
-              <li>Ripley's Entertainment</li>
-              <li>South African Airways</li>
-              <li>South Beach Food &amp; Wine Festival</li>
-              <li>The Biltmore Hotel Coral Gables</li>
-              <li>The Leiden Collection</li>
-              <li>The MIAMI Institute</li>
-              <li>Toronto Escapes</li>
-            </ul>
 
           </div>
         </div>
