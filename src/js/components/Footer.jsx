@@ -24,7 +24,7 @@ export default function Footer() {
         <span className="colophon" title={colophon}>
           Built in Brooklyn. 🗽 Based in Florida. 🌴
         </span><br/><br/>
-        <span>Built with React + <s>Firebase</s> Supabase</span>
+        <span>Built with React + <s>Firebase</s> Supabase.</span>
       </p>
     </div>
   )
