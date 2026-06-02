@@ -80,45 +80,35 @@ export default class Resume extends Component {
 
             <h2>Experience</h2>
 
-            <div className="experience">
-              <p>
-                <strong>GTM Engineer</strong><br/>
-                <em>Quicknode (2025–Present)</em><br/>
-                Leading developer experience design and product operations across 80+ chains and 130+ networks for the web3 infrastructure platform.
-              </p>
-            </div>
+            <p>
+              <strong>GTM Engineer</strong><br/>
+              <em>Quicknode (2025–Present)</em><br/>
+              Leading developer experience design and product operations across 80+ chains and 130+ networks for the web3 infrastructure platform.
+            </p>
 
-            <div className="experience">
-              <p>
-                <strong>Senior Software Engineer</strong><br/>
-                <em>Apple (2021–2025)</em><br/>
-                Built front-end features for a custom CRM platform and co-managed a design system across a large cross-functional team.
-              </p>
-            </div>
+            <p>
+              <strong>Senior Software Engineer</strong><br/>
+              <em>Apple (2021–2025)</em><br/>
+              Built front-end features for a custom CRM platform and co-managed a design system across a large cross-functional team.
+            </p>
 
-            <div className="experience">
-              <p>
-                <strong>Product Operations Lead</strong><br/>
-                <em>SiriusXM + Pandora (2017–2019)</em><br/>
-                Led product operations at SiriusXM's internal product incubator, Big Mirror Labs. Shipped across 4 simultaneous product tracks with 18 engineers, 6 designers, and 2 data scientists.
-              </p>
-            </div>
+            <p>
+              <strong>Product Operations Lead</strong><br/>
+              <em>SiriusXM + Pandora (2017–2019)</em><br/>
+              Led product operations at SiriusXM's internal product incubator, Big Mirror Labs. Shipped across 4 simultaneous product tracks with 18 engineers, 6 designers, and 2 data scientists.
+            </p>
 
-            <div className="experience">
-              <p>
-                <strong>Product Designer</strong><br/>
-                <em>Worldmedia Interactive (2014–2016)</em><br/>
-                Digital product solutions for global travel and hospitality brands including Alamo, Enterprise, Norwegian Cruise Line, and Ralph Lauren.
-              </p>
-            </div>
+            <p>
+              <strong>Product Designer</strong><br/>
+              <em>Worldmedia Interactive (2014–2016)</em><br/>
+              Digital product solutions for global travel and hospitality brands including Alamo, Enterprise, Norwegian Cruise Line, and Ralph Lauren.
+            </p>
 
-            <div className="experience">
-              <p>
-                <strong>Product Owner, Mobile</strong><br/>
-                <em>1Sale.com (2012–2014)</em><br/>
-                Product development for a flash-sale retailer's iOS app. Mobile became the platform's primary conversion channel.
-              </p>
-            </div>
+            <p>
+              <strong>Product Owner, Mobile</strong><br/>
+              <em>1Sale.com (2012–2014)</em><br/>
+              Product development for a flash-sale retailer's iOS app. Mobile became the platform's primary conversion channel.
+            </p>
 
             <h2>Recognition</h2>
             <p>Featured in The New York Times<br/>
