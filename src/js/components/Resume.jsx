@@ -26,7 +26,7 @@ export default class Resume extends Component {
           <div className="column">
 
             <h2>Intro</h2>
-            <p>I'm Michael Castilla, a product engineer based in Port St. Lucie, FL. I have 15+ years of experience building digital products — from consumer apps and developer tools to internal platforms and GTM systems. My work spans product operations, design systems, UX, and front-end engineering across companies at every scale, from early-stage startups to Apple.</p>
+            <p>I'm Michael Castilla, a product engineer based in Port St. Lucie, FL. I have 15+ years of experience designing and building digital products — from consumer apps and developer tools to internal platforms and GTM systems. My work spans product operations, design systems, UX, and front-end engineering across companies at every scale, from early-stage startups to Apple.</p>
 
             <h2>Tools</h2>
             <ul>
