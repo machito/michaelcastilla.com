@@ -82,7 +82,7 @@ export default class Resume extends Component {
 
             <div className="experience">
               <p>
-                <strong>Head of Design / Product Operations</strong><br/>
+                <strong>GTM Engineer</strong><br/>
                 <em>Quicknode (2025–Present)</em><br/>
                 Leading developer experience design and product operations across 80+ chains and 130+ networks for the web3 infrastructure platform.
               </p>
