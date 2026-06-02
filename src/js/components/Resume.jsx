@@ -92,7 +92,7 @@ export default class Resume extends Component {
               <p>
                 <strong>Senior Software Engineer</strong><br/>
                 <em>Apple (2021–2025)</em><br/>
-                Cross-functional program leadership across product, design, and engineering for consumer and developer-facing initiatives across the Apple ecosystem.
+                Built front-end features for a custom CRM platform and co-managed a design system across a large cross-functional team.
               </p>
             </div>
 
