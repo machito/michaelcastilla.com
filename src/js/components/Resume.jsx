@@ -1,33 +1,13 @@
 /*
-  Component: <Portfolio />
-  File: Portfolio.js
+  Component: <Resume />
+  File: Resume.jsx
 */
 
 /* Core components */
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-/* Project component */
-import Project from './Project.jsx'
-
-/* Layout components */
-import { Header, Footer } from './Layout.jsx'
-
-/* Data controller */
-import { Data } from './../controllers/data.js'
-
-/* Helpers */
-import _ from 'underscore'
-
-/* Portfolio class */
 export default class Resume extends Component {
-  constructor(props) {
-      super(props)
-      this.state = {
-        resume: null
-      }
-  }
   scrollToTop() {
     window.scroll({top: 0, left: 0, behavior: 'smooth' })
   }
@@ -44,41 +24,126 @@ export default class Resume extends Component {
         </Helmet>
         <div className="row">
           <div className="column">
-            <h2>Intro</h2>
-            <p>Hi, my name is Michael Castilla. I'm a product designer from Miami currently based in New York City with a passion for understanding the intersection of people creating products and the process and tools they use.</p>
 
-            <p>My approach to digital strategy – called product operations – focuses on a streamlined customer validation process powered by lightweight design systems and data-driven software development practices.</p>
+            <h2>Intro</h2>
+            <p>I'm Michael Castilla, a Product Engineer based in Miami, FL. I have 15+ years of experience building digital products — from consumer apps and developer tools to internal platforms and marketing systems. My work spans product operations, design systems, UX, and front-end engineering across companies at every scale, from early-stage startups to Apple.</p>
+
+            <h2>Experience</h2>
+
+            <div className="experience">
+              <p>
+                <strong>Founder, Product &amp; Design</strong><br/>
+                <em>Stableterm (2026–Present)</em><br/>
+                Building a stablecoin API and terminal platform, including Peggy — an AI-powered chatbot for querying on-chain data across chains and wallets.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Head of Design / Product Operations</strong><br/>
+                <em>QuickNode (2025–Present)</em><br/>
+                Leading developer experience design and product operations across 80+ chains and 130+ networks for the web3 infrastructure platform.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Program Lead, Product Operations</strong><br/>
+                <em>Apple (2021–2025)</em><br/>
+                Cross-functional program leadership across product, design, and engineering for consumer and developer-facing initiatives across the Apple ecosystem.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Product &amp; Design Lead</strong><br/>
+                <em>WMX</em><br/>
+                Building a media commerce platform where editorial content and transactional experiences are a single native experience.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Product Operations Lead</strong><br/>
+                <em>SiriusXM + Pandora (2017–2019)</em><br/>
+                Led product operations at SiriusXM's internal product incubator, Big Mirror Labs. Shipped across 4 simultaneous product tracks with 18 engineers, 6 designers, and 2 data scientists.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Product Designer</strong><br/>
+                <em>Worldmedia Interactive (2014–2016)</em><br/>
+                Digital product solutions for global travel and hospitality brands including Alamo, Enterprise, Norwegian Cruise Line, and Ralph Lauren.
+              </p>
+            </div>
+
+            <div className="experience">
+              <p>
+                <strong>Product Owner, Mobile</strong><br/>
+                <em>1Sale.com (2012–2014)</em><br/>
+                Product development for a flash-sale retailer's iOS app. Mobile became the platform's primary conversion channel.
+              </p>
+            </div>
+
+            <h2>Recognition</h2>
+            <p>Featured in The New York Times<br/>
+            <em>City of NY's first cybersecurity initiative "NYC Secure" (2018)</em></p>
+
+            <p>Travel Weekly Gold Magellan Award<br/>
+            <em>NCL Escape Microsite &amp; Travel Agent Portal (2015)</em></p>
+
+            <p>Nominated for a Silver ADDY Award<br/>
+            <em>NCL Escape Microsite (2015)</em></p>
+
+            <p>Awarded #1 CSS developer in Miami on GitHub<br/>
+            <em>Open-source project "Animate.less" (2015)</em></p>
+
+            <p>Founder of the largest annual WordPress event in Florida<br/>
+            <em>WordCamp Miami (2008–Present)</em></p>
+
+            <p>Featured in Web Designer Magazine: Issue 157 (2009)</p>
+
+            <p>Mentioned in "WordPress and Flash 10x Cookbook"<br/>
+            <em>Peter Spannagle &amp; Sarah Soward (2010)</em></p>
+
+            <p>Featured multiple times for technology initiatives<br/>
+            <em>The Miami Herald (2013, 2012, 1995)</em></p>
+
+          </div>
+
+          <div className="column">
 
             <h2>Tools</h2>
             <ul>
-              <li>Slack, Basecamp, Trello, Jira</li>
-              <li>Photoshop, Sketch, Abstract, InVision</li>
-              <li>SCSS, SASS, Stylus, SMACSS, BEM</li>
-              <li>Bootstrap, Foundation, Semantic UI</li>
-              <li>Firebase, Redis, MongoDB, MySQL</li>
-              <li>Flask, Django, JSON APIs</li>
-              <li>Grunt, Gulp, Webpack</li>
-              <li>NodeJS, Express, Angular, React</li>
-              <li>AWS, Google Cloud Platform, Firebase, Heroku</li>
-              <li>Git, GitHub, Bitbucket, Jenkins</li>
-              <li>MailChimp, Mandrill, Campaign Monitor</li>
-              <li>Optimizely, Segment.io, Customer.io</li>
+              <li>Figma, Framer, Storybook</li>
+              <li>React, TypeScript, Next.js, Node.js</li>
+              <li>Sass, Tailwind, CSS Modules</li>
+              <li>Supabase, PostgreSQL, Firebase, Redis</li>
+              <li>AWS, Vercel, Cloudflare, GitHub Actions</li>
+              <li>Linear, Notion, Jira, Confluence</li>
+              <li>PostHog, Segment, Mixpanel, Amplitude</li>
+              <li>Claude, Cursor, GitHub Copilot</li>
+              <li>Git, GitHub, CI/CD pipelines</li>
+              <li>Webpack, Vite, Turborepo</li>
+              <li>WordPress, Webflow</li>
             </ul>
 
             <h2>Clients</h2>
             <ul>
-              <li>.CO</li>
+              <li>.CO Internet</li>
               <li>Aeroméxico</li>
               <li>Alamo Rent-A-Car</li>
               <li>Alcatel-Lucent</li>
               <li>Anteros Cruises</li>
+              <li>Back To You Rehab &amp; Therapy</li>
               <li>Chantecaille</li>
               <li>City of New York</li>
               <li>Enterprise Rent-A-Car</li>
               <li>First Quality</li>
               <li>James L. Knight Foundation</li>
               <li>JetBlue Airways</li>
-              <li>Karisma Hotels & Resorts</li>
+              <li>Karisma Hotels &amp; Resorts</li>
               <li>Macy's</li>
               <li>Microsoft</li>
               <li>Neiman Marcus</li>
@@ -86,7 +151,7 @@ export default class Resume extends Component {
               <li>Palm Beach Food &amp; Wine Festival</li>
               <li>Ralph Lauren</li>
               <li>Resorts World Bimini</li>
-              <li>Ripley’s Entertainment</li>
+              <li>Ripley's Entertainment</li>
               <li>South African Airways</li>
               <li>South Beach Food &amp; Wine Festival</li>
               <li>The Biltmore Hotel Coral Gables</li>
@@ -94,62 +159,7 @@ export default class Resume extends Component {
               <li>The MIAMI Institute</li>
               <li>Toronto Escapes</li>
             </ul>
-          </div>
 
-          <div className="column">
-            <h2>Experience</h2>
-            <p>
-            <strong>Product Operations</strong><br/>
-            <em>SiriusXM + Pandora (2017–Current)</em><br/>
-            Leading design systems and digital product strategy at SiriusXM's product incubator.
-            </p>
-            {/*<p>
-            <strong>Product Designer</strong><br/>
-            <em>Disruptive Media Lab (2016–2017)</em><br/>
-            Digital enterprise product solutions for global fashion and retail brands.
-            </p>*/}
-            <p>
-            <strong>Product Designer</strong><br/>
-            <em>Worldmedia Interactive (2014–2016)</em><br/>
-            Digital enterprise product solutions for global travel and hospitality brands.
-            </p>
-            <p>
-            <strong>Product Owner, Mobile</strong><br/>
-            <em>1Sale.com (2012–2014)</em><br/>
-            Product development for an online retailer's iOS app.
-            </p>
-            {/*<p>
-            <strong>President</strong><br/>
-            <em>Machito, Inc. (2006–Present)</em><br/>
-            Product development for an online retailer's iOS app.
-            </p>*/}
-
-            <h2>Recognition</h2>
-            <p>Featured in The New York Times<br/>
-            <em>City of NY's first cyber-security initative "NYC Secure" (2018)</em></p>
-
-            <p>Awarded the #1 CSS developer in Miami on GitHub<br/>
-            <em>Open-source project "Animate.less" (2015 – Present)</em></p>
-
-            <p>Nominated for a Silver ADDY Award<br/>
-            <em>NCL Escape Microsite (2015)</em></p>
-
-            <p>Travel Weekly Gold Magellan Award<br/>
-            <em>NCL Escape Microsite (2015)</em></p>
-
-            <p>Travel Weekly Gold Magellan Award<br/>
-            <em>NCL Escape Travel Agent Portal (2015)</em></p>
-
-            <p>Featured multiple times for technology initiatives<br/>
-            <em>The Miami Herald (2013, 2012, 1995)</em></p>
-
-            <p>Mentioned in "WordPress and Flash 10x Cookbook"<br/>
-            <em>Peter Spannagle &amp; Sarah Soward (2010)</em></p>
-
-            <p>Featured in Web Designer Magazine: Issue 157 (2009)</p>
-
-            <p>Founder of the largest annual WordPress event in Florida<br/>
-            <em>WordCamp Miami (2008 - Current)</em></p>
           </div>
         </div>
       </div>
