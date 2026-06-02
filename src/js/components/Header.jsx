@@ -18,7 +18,7 @@ export default function Header() {
   const headingTitle = `Hi there! My name is ${heading}`
   const jobTitle = "Product Engineer"
   const location = "Remote"
-  const tagline = `I'm a ${jobTitle} based in Miami, FL.`
+  const tagline = `I'm a ${jobTitle} based in Florida.`
   
 
   return (

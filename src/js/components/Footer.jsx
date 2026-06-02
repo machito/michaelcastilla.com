@@ -13,7 +13,7 @@ import Tesla from './Tesla.jsx'
 
 /* Footer component */
 export default function Footer() {
-  const copyright = `© 2007-${new Date().getFullYear()} Machito, Inc.`
+  const copyright = `© 2006-${new Date().getFullYear()} Machito, Inc.`
   const colophon = "Made with ❤️ in Brooklyn."
 
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
         <span className="colophon" title={colophon}>
           Built in Brooklyn. 🗽 Based in Florida. 🌴
         </span><br/><br/>
-        <span>Built with React + <s>Firebase</s> Supabase</span>
+        <span>Built with React + <s>Firebase</s> Supabase.</span>
       </p>
     </div>
   )
