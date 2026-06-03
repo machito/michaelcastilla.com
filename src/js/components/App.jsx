@@ -52,14 +52,16 @@ export default class App extends Component {
           <Route path={/^(?!\/cms).*/} render={() => (
             <span>
               <Header />
-              <Switch>
-                <Route exact path="/" component={Portfolio} />
-                <Route path="/portfolio/:slug" component={Portfolio} />
-                <Route exact path="/stats" component={Home} />
-                <Route exact path="/resume" component={Resume} />
-                <Route exact path="/cv" component={CV} />
-                <Route path="/" component={Ouch} />
-              </Switch>
+              <main>
+                <Switch>
+                  <Route exact path="/" component={Portfolio} />
+                  <Route path="/portfolio/:slug" component={Portfolio} />
+                  <Route exact path="/stats" component={Home} />
+                  <Route exact path="/resume" component={Resume} />
+                  <Route exact path="/cv" component={CV} />
+                  <Route path="/" component={Ouch} />
+                </Switch>
+              </main>
               <Footer />
             </span>
           )} />
