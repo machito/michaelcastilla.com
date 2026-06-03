@@ -14,7 +14,7 @@ export default function Menu() {
     <ul className="menu">
       <li className="home">
         <NavLink activeClassName="active" exact to="/" title="Home sweet home!" tabIndex="0">
-          <img src="/img/home.svg" alt="Home" width="20" />
+          <img src="/img/home.svg" alt="Home" width="20" height="20" />
         </NavLink>
       </li>
       {/*<li><NavLink activeClassName="active" to="/about" title="About">About</NavLink></li>*/}
@@ -23,7 +23,7 @@ export default function Menu() {
       {/*<li><NavLink activeClassName="active" to="/cv" title="Learn more about my work" tabIndex="4">CV</NavLink></li>*/}
       <li className="contact">
         <a href="mailto:michaelcastilla@gmail.com" title="Contact me">
-          <img src="/img/mail.svg" alt="Home" width="20" />
+          <img src="/img/mail.svg" alt="Home" width="20" height="20" />
         </a>
       </li>
       {/*<li className="contact">
