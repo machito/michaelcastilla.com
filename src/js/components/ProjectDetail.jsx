@@ -89,7 +89,7 @@ export default class ProjectDetail extends Component {
             {yearTag && <span className="case-meta-item">{yearTag.replace('-', ' - ')}</span>}
           </div>
           <div className="case-header-center">
-            <Logo src={item.logo} />
+            <Logo src={item.logo} brands={item.brands} />
           </div>
           <div className="case-header-right">
             {item.url && item.online && (
