@@ -82,7 +82,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/img', to: 'img' },
-        { from: 'src/robots.txt', to: 'robots.txt' }
+        { from: 'src/robots.txt', to: 'robots.txt' },
+        { from: 'src/sitemap.xml', to: 'sitemap.xml' }
       ]
     })
   ]
