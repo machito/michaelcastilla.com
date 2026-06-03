@@ -62,11 +62,9 @@ export default class Project extends Component {
     tags = tags && tags.map((tag, index) =>
       <Tag key={index} item={tag} />
     )
-    let tabIndexOffset = document.getElementsByTagName('a').length // the header links are the only <a> tags in the document
     let projectName = this.props.item.project
     let projectId = Utilities.cleanProjectName(projectName)
     let projectClass = `panel ${projectId}`
-    let projetIndex = this.props.item.id + tabIndexOffset // offset for header links
     let projectLogo = this.props.item.logo
     let projectBranding = this.props.item.brands
     let online = this.props.item.online
@@ -75,7 +73,6 @@ export default class Project extends Component {
       name: projectName,
       id: projectId,
       class: projectClass,
-      index: projetIndex,
       logo: projectLogo,
       branding: projectBranding,
       highlights: highlights,
@@ -92,7 +89,7 @@ export default class Project extends Component {
       <section
         id={project.id}
         className={project.class}
-        tabIndex={project.index}
+        tabIndex="0"
         onClick={this.handleClick}>
         <div className="panel-inner">
           <Title item={project} />

@@ -13,13 +13,13 @@ export default function Menu() {
   return (
     <ul className="menu">
       <li className="home">
-        <NavLink activeClassName="active" exact to="/" title="Home sweet home!" tabIndex="1">
+        <NavLink activeClassName="active" exact to="/" title="Home sweet home!" tabIndex="0">
           <img src="/img/home.svg" alt="Home" width="20" />
         </NavLink>
       </li>
       {/*<li><NavLink activeClassName="active" to="/about" title="About">About</NavLink></li>*/}
-      <li><NavLink activeClassName="active" to="/resume" title="📄 Are you hiring?" tabIndex="2">Resume</NavLink></li>
-      <li><NavLink activeClassName="active" to="/stats" title="📊 Check out my stats!" tabIndex="3">Stats</NavLink></li>
+      <li><NavLink activeClassName="active" to="/resume" title="📄 Are you hiring?" tabIndex="0">Resume</NavLink></li>
+      <li><NavLink activeClassName="active" to="/stats" title="📊 Check out my stats!" tabIndex="0">Stats</NavLink></li>
       {/*<li><NavLink activeClassName="active" to="/cv" title="Learn more about my work" tabIndex="4">CV</NavLink></li>*/}
       <li className="contact">
         <a href="mailto:michaelcastilla@gmail.com" title="Contact me">
