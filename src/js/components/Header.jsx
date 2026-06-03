@@ -24,7 +24,10 @@ export default function Header() {
   return (
     <div className="header animated fadeInDown">
       <Link to="/" tabIndex="0">
-        <img className="bitmoji"  title={headingTitle} src="/img/michaelcastilla-bitmoji.png" alt="Michael Castilla" />
+        <picture>
+          <source srcSet="/img/michaelcastilla-bitmoji.avif" type="image/avif" />
+          <img className="bitmoji" title={headingTitle} src="/img/michaelcastilla-bitmoji.png" alt="Michael Castilla" />
+        </picture>
       </Link>
       <h1 title={headingTitle}>
         <Link to="/" tabIndex="0">{heading}</Link>
