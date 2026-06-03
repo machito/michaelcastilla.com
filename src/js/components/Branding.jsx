@@ -22,7 +22,7 @@ export function Title(props) {
 export function Branding(props) {
   return (
     <span className="brands" title={props.item.branding}>
-      <Logo src={props.item.logo} />
+      <Logo src={props.item.logo} brands={props.item.branding} />
     </span>
   )
 }
