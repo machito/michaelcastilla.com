@@ -83,7 +83,8 @@ module.exports = {
       patterns: [
         { from: 'src/img', to: 'img' },
         { from: 'src/robots.txt', to: 'robots.txt' },
-        { from: 'src/sitemap.xml', to: 'sitemap.xml' }
+        { from: 'src/sitemap.xml', to: 'sitemap.xml' },
+        { from: 'src/llms.txt', to: 'llms.txt' }
       ]
     })
   ]

@@ -26,7 +26,7 @@ export default class Resume extends Component {
           <div className="column">
 
             <h2>Intro</h2>
-            <p>I'm Michael Castilla, a product engineer based in Florida. I have 15+ years of experience designing and building digital products — from consumer apps and developer tools to internal platforms and GTM systems. My work spans product operations, design systems, UX, and front-end engineering across companies at every scale, from early-stage startups to Apple.</p>
+            <p>I'm Michael Castilla — a GTM Engineer based in Central Florida with 20+ years of experience at the intersection of product, engineering, and go-to-market strategy. I've built developer tools at Quicknode, shipped CRM infrastructure at Apple, and launched SiriusXM's first podcast platform in collaboration with Pandora. I specialize in product operations: closing the loop between what gets built, how it ships, and how it grows.</p>
 
             <h2>Tools</h2>
             <ul>

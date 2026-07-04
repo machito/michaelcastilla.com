@@ -30,7 +30,7 @@ export default class CV extends Component {
         </Helmet>
         <div className="row">
           <h2>Intro</h2>
-          <p>Hi, my name is Michael Castilla. I'm a product designer based in New York City with a passion for studying the art and science of people, habits, and products.</p>
+          <p>Hi, my name is Michael Castilla. I'm a GTM Engineer based in Miami, FL with a passion for studying the art and science of people, habits, and products.</p>
           <p>My approach to digital strategy – called product operations – focuses on a streamlined customer validation process powered by lightweight design systems and agile-inspired software development practices.</p>
 
           <div className="experience">

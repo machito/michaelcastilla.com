@@ -1,0 +1,43 @@
+# Michael Castilla
+
+> GTM Engineer based in Miami, FL with 15+ years of experience leading product teams and building internal tools and consumer applications across SaaS, media, and eCommerce.
+
+Michael Castilla is an award-winning product management and software engineering professional. He specializes in product operations — a streamlined customer validation process powered by lightweight design systems and agile-inspired development practices. He has shipped work for SiriusXM, Pandora, QuickNode, Apple, Polo Ralph Lauren, Norwegian Cruise Line, and others.
+
+## Portfolio
+
+- [StableTerm](https://michaelcastilla.com/portfolio/stableterm): AI-powered terminal for blockchain developers
+- [QuickNode](https://michaelcastilla.com/portfolio/quicknode): Developer platform for blockchain infrastructure
+- [Back to You](https://michaelcastilla.com/portfolio/back-to-you): Apple TV+ promotional experience
+- [Apple](https://michaelcastilla.com/portfolio/apple): Internal tooling for Apple content operations
+- [Pandora](https://michaelcastilla.com/portfolio/pandora): Product work on Pandora's streaming platform
+- [SiriusXM Podcasts](https://michaelcastilla.com/portfolio/siriusxm-podcasts): Launched SiriusXM's first podcast product on Pandora
+- [SiriusXM Publish](https://michaelcastilla.com/portfolio/siriusxm-publish): Internal CMS connecting SiriusXM content to Pandora
+- [SiriusXM Clips](https://michaelcastilla.com/portfolio/siriusxm-clips): Audio clipping tool for SiriusXM content
+- [NYC Secure](https://michaelcastilla.com/portfolio/nyc-secure): City of New York mobile security app
+- [Spoke](https://michaelcastilla.com/portfolio/spoke): SiriusXM's first social podcast experiment
+- [BML](https://michaelcastilla.com/portfolio/bml): Brand identity and digital experience
+- [Ralph Lauren](https://michaelcastilla.com/portfolio/ralph-lauren): Digital experience for Polo Ralph Lauren
+- [Resorts World Bimini](https://michaelcastilla.com/portfolio/rwb): Resort marketing microsite
+- [Alamo China](https://michaelcastilla.com/portfolio/alamo-china): Localized rental car experience for Chinese market
+- [Alamo Europe](https://michaelcastilla.com/portfolio/alamo-europe): European rental car marketing site
+- [Enterprise Europe](https://michaelcastilla.com/portfolio/enterprise-europe): Enterprise Rent-A-Car European site
+- [NCL Escape](https://michaelcastilla.com/portfolio/ncl-escape): Award-winning Norwegian Cruise Line microsite
+- [Toronto Escapes](https://michaelcastilla.com/portfolio/toronto-escapes): Air Canada travel campaign site
+- [The MIAMI Institute](https://michaelcastilla.com/portfolio/miami-institute): Higher education digital experience
+- [Aeromexico](https://michaelcastilla.com/portfolio/aeromexico): Airline digital campaign
+- [1Sale](https://michaelcastilla.com/portfolio/1sale): eCommerce platform contributing $150MM+ in annual revenue
+- [.CO](https://michaelcastilla.com/portfolio/dot-co): Domain registry brand campaign
+
+## Background
+
+- [Resume / CV](https://michaelcastilla.com/resume): Full work history, skills, clients, and recognition
+- [Stats](https://michaelcastilla.com/stats): Live analytics dashboard
+
+## Recognition
+
+- 2015 Travel Weekly Gold Magellan — NCL Escape Microsite
+- 2015 Travel Weekly Gold Magellan — NCL Escape Travel Agent Portal
+- 2016 Silver ADDY Award nomination — NCL Escape Microsite
+- #1 CSS developer in Miami on GitHub for open-source project Animate.less (2015)
+- Featured in The Miami Herald, Web Designer Magazine, and "WordPress and Flash 10x Cookbook"
