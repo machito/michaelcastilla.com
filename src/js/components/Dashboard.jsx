@@ -46,6 +46,7 @@ export default class Dashboard extends Component {
     // console.log('dashboard', dashboard)
     return (
       <div>
+        {!stats && <div className="spinner" />}
         <div className="content animated fadeIn">{dashboard}</div>
       </div>
     )

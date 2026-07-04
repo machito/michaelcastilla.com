@@ -60,9 +60,10 @@ export default class Portfolio extends Component {
     return (
       <div className="content">
         <Helmet>
-          <title>Michael Castilla · Product Engineer · Portfolio</title>
+          <title>Michael Castilla · GTM Engineer · Portfolio</title>
           <link rel="shortcut icon" href="/img/briefcase.png"/>
         </Helmet>
+        {!portfolio && <div className="spinner" />}
         {portfolio && (
           <Route exact path="/" render={() => (
             <span>
